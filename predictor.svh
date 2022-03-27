@@ -24,7 +24,6 @@ class predictor extends uvm_subscriber #(transaction);
   logic predict_sum;
 
   function void write(transaction t);
-    // t is the transaction sent from monitor
     output_tx = transaction#(4)::type_id::create("output_tx", this);
     output_tx.copy(t);
    // calculate the expected count_out
@@ -33,7 +32,6 @@ class predictor extends uvm_subscriber #(transaction);
    predict_b = t.b;
    predict_carry_in = t.carry_in;
 
-    //$display("Predictor 5 bit sum: %b", (5'(t.a) + 5'(t.b) + 5'(t.carry_in)));
    `uvm_info("PREDICTOR", $sformatf("5 bit sum: %b", (5'(t.a) + 5'(t.b) + 5'(t.carry_in))), UVM_LOW);
     if((5'(t.a) + 5'(t.b) + 5'(t.carry_in)) > 5'b01111) begin
       output_tx.result_overflow = 1;
@@ -49,7 +47,6 @@ class predictor extends uvm_subscriber #(transaction);
 
 
     // after prediction, the expected output send to the scoreboard 
-    // $display("Predictor: a: %b, b: %b, c: %b", predict_a, predict_b, predict_carry_in);
    `uvm_info("PREDICTOR", $sformatf("a: %b, b: %b, c: %b", predict_a, predict_b, predict_carry_in), UVM_LOW);
     pred_ap.write(output_tx);
   endfunction: write

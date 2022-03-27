@@ -1,3 +1,7 @@
+# vsim -c tb_adder -L /package/eda/mg/questa10.6b/questasim/uvm-1.2 -novopt -do "run -all" 
+# Start time: 20:47:33 on Mar 26,2022
+# Loading /tmp/socet67@asicfab.ecn.purdue.edu_dpi_15855/linux_x86_64_gcc-5.3.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # //  Questa Sim-64
 # //  Version 10.6b linux_x86_64 May 25 2017
 # //
@@ -12,21 +16,21 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim -i tb_adder -L /package/eda/mg/questa10.6b/questasim/uvm-1.2 -novopt 
-# Start time: 21:43:48 on Mar 23,2022
-# Loading /tmp/socet67@asicfab.ecn.purdue.edu_dpi_83367/linux_x86_64_gcc-5.3.0/export_tramp.so
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/asicfab/a/socet67/adder_uvm_clocked/adder_uvm/work.tb_adder
+# Refreshing /home/asicfab/a/socet67/adder_uvm_clocked/adder_uvm/work.tb_adder_sv_unit
 # Loading sv_std.std
 # Loading /package/eda/mg/questa10.6b/questasim/uvm-1.2.uvm_pkg
 # Loading work.tb_adder_sv_unit
 # Loading work.tb_adder
+# Refreshing /home/asicfab/a/socet67/adder_uvm_clocked/adder_uvm/work.adder_if
 # Loading work.adder_if
+# Refreshing /home/asicfab/a/socet67/adder_uvm_clocked/adder_uvm/work.adder_nbit
 # Loading work.adder_nbit
 # Loading /package/eda/mg/questa10.6b/questasim/uvm-1.2.questa_uvm_pkg
-# Compiling /tmp/socet67@asicfab.ecn.purdue.edu_dpi_83367/linux_x86_64_gcc-5.3.0/exportwrapper.c
-# Loading /tmp/socet67@asicfab.ecn.purdue.edu_dpi_83367/linux_x86_64_gcc-5.3.0/vsim_auto_compile.so
+# Compiling /tmp/socet67@asicfab.ecn.purdue.edu_dpi_15855/linux_x86_64_gcc-5.3.0/exportwrapper.c
+# Loading /tmp/socet67@asicfab.ecn.purdue.edu_dpi_15855/linux_x86_64_gcc-5.3.0/vsim_auto_compile.so
 # Loading /package/eda/mg/questa10.6b/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
-run -all
+# run -all
 # UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
 # ----------------------------------------------------------------
 # UVM-1.2
@@ -56,14 +60,14 @@ run -all
 # UVM_INFO monitor.svh(34) @ 0: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO transaction.svh(34) @ 10000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 0000, b = 0000, tx.b = 0000, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(34) @ 10000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO sequence.svh(23) @ 10000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 10000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 0110, c: 0
+# UVM_INFO sequence.svh(22) @ 10000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 10000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 0110, c: 0
 # UVM_INFO driver.svh(32) @ 10000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 30000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 0110, cin: 0
 # UVM_INFO transaction.svh(34) @ 30000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 0000, b = 0110, tx.b = 0000, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 30000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 0110, c: 0
-# UVM_INFO predictor.svh(37) @ 30000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 30000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 0110, c: 0
+# UVM_INFO predictor.svh(35) @ 30000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
+# UVM_INFO predictor.svh(50) @ 30000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 0110, c: 0
 # UVM_INFO monitor.svh(34) @ 70000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 70000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -78,14 +82,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 70000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 70000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 70000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 0110, c: 0
+# UVM_INFO sequence.svh(22) @ 70000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 70000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 0110, c: 0
 # UVM_INFO driver.svh(32) @ 70000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 90000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 0110, cin: 0
 # UVM_INFO transaction.svh(34) @ 90000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 1001, b = 0110, tx.b = 0110, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 90000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 0110, c: 0
-# UVM_INFO predictor.svh(37) @ 90000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10001
-# UVM_INFO predictor.svh(53) @ 90000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 0110, c: 0
+# UVM_INFO predictor.svh(35) @ 90000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10001
+# UVM_INFO predictor.svh(50) @ 90000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 0110, c: 0
 # UVM_INFO monitor.svh(34) @ 130000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 130000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -100,14 +104,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 130000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0010, c: 0
+# UVM_INFO sequence.svh(22) @ 130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0010, c: 0
 # UVM_INFO driver.svh(32) @ 130000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 150000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 0010, cin: 0
 # UVM_INFO transaction.svh(34) @ 150000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 1011, b = 0010, tx.b = 0110, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 150000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 0010, c: 0
-# UVM_INFO predictor.svh(37) @ 150000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00010
-# UVM_INFO predictor.svh(53) @ 150000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0010, c: 0
+# UVM_INFO predictor.svh(35) @ 150000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00010
+# UVM_INFO predictor.svh(50) @ 150000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0010, c: 0
 # UVM_INFO monitor.svh(34) @ 190000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 190000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -122,14 +126,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 190000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1001, c: 0
+# UVM_INFO sequence.svh(22) @ 190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1001, c: 0
 # UVM_INFO driver.svh(32) @ 190000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 210000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1001, cin: 0
 # UVM_INFO transaction.svh(34) @ 210000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 0000, b = 1001, tx.b = 0010, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 210000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1001, c: 0
-# UVM_INFO predictor.svh(37) @ 210000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
-# UVM_INFO predictor.svh(53) @ 210000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1001, c: 0
+# UVM_INFO predictor.svh(35) @ 210000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
+# UVM_INFO predictor.svh(50) @ 210000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1001, c: 0
 # UVM_INFO monitor.svh(34) @ 250000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 250000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -144,14 +148,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 250000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1111, b: 0111, c: 0
+# UVM_INFO sequence.svh(22) @ 250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1111, b: 0111, c: 0
 # UVM_INFO driver.svh(32) @ 250000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 270000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1111, b: 0111, cin: 0
 # UVM_INFO transaction.svh(34) @ 270000: reporter@@tx [TRANSACTION] a = 1111, tx.a = 0111, b = 0111, tx.b = 1001, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 270000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1111, b: 0111, c: 0
-# UVM_INFO predictor.svh(37) @ 270000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10110
-# UVM_INFO predictor.svh(53) @ 270000: uvm_test_top.env.pred [PREDICTOR] a: 1111, b: 0111, c: 0
+# UVM_INFO predictor.svh(35) @ 270000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10110
+# UVM_INFO predictor.svh(50) @ 270000: uvm_test_top.env.pred [PREDICTOR] a: 1111, b: 0111, c: 0
 # UVM_INFO monitor.svh(34) @ 310000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 310000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -166,14 +170,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 310000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 0011, c: 0
+# UVM_INFO sequence.svh(22) @ 310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 0011, c: 0
 # UVM_INFO driver.svh(32) @ 310000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 330000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1100, b: 0011, cin: 0
 # UVM_INFO transaction.svh(34) @ 330000: reporter@@tx [TRANSACTION] a = 1100, tx.a = 1111, b = 0011, tx.b = 0111, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 330000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1100, b: 0011, c: 0
-# UVM_INFO predictor.svh(37) @ 330000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 330000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 0011, c: 0
+# UVM_INFO predictor.svh(35) @ 330000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
+# UVM_INFO predictor.svh(50) @ 330000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 0011, c: 0
 # UVM_INFO monitor.svh(34) @ 370000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 370000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -188,14 +192,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 370000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0001, c: 0
+# UVM_INFO sequence.svh(22) @ 370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0001, c: 0
 # UVM_INFO driver.svh(32) @ 370000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 390000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 0001, cin: 0
 # UVM_INFO transaction.svh(34) @ 390000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 1100, b = 0001, tx.b = 0011, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 390000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 0001, c: 0
-# UVM_INFO predictor.svh(37) @ 390000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00011
-# UVM_INFO predictor.svh(53) @ 390000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0001, c: 0
+# UVM_INFO predictor.svh(35) @ 390000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00011
+# UVM_INFO predictor.svh(50) @ 390000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0001, c: 0
 # UVM_INFO monitor.svh(34) @ 430000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 430000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -210,14 +214,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 430000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1100, c: 0
+# UVM_INFO sequence.svh(22) @ 430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1100, c: 0
 # UVM_INFO driver.svh(32) @ 430000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 450000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1100, cin: 0
 # UVM_INFO transaction.svh(34) @ 450000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0010, b = 1100, tx.b = 0001, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 450000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 450000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 450000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1100, c: 0
+# UVM_INFO predictor.svh(35) @ 450000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
+# UVM_INFO predictor.svh(50) @ 450000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1100, c: 0
 # UVM_INFO monitor.svh(34) @ 490000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 490000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -232,14 +236,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 490000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 1101, c: 1
+# UVM_INFO sequence.svh(22) @ 490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 1101, c: 1
 # UVM_INFO driver.svh(32) @ 490000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 510000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 1101, cin: 1
 # UVM_INFO transaction.svh(34) @ 510000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 0001, b = 1101, tx.b = 1100, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 510000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 510000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
-# UVM_INFO predictor.svh(53) @ 510000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 1101, c: 1
+# UVM_INFO predictor.svh(35) @ 510000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
+# UVM_INFO predictor.svh(50) @ 510000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 1101, c: 1
 # UVM_INFO monitor.svh(34) @ 550000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 550000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -254,14 +258,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 550000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 1010, c: 0
+# UVM_INFO sequence.svh(22) @ 550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 1010, c: 0
 # UVM_INFO driver.svh(32) @ 550000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 570000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 1010, cin: 0
 # UVM_INFO transaction.svh(34) @ 570000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0110, b = 1010, tx.b = 1101, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 570000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 1010, c: 0
-# UVM_INFO predictor.svh(37) @ 570000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
-# UVM_INFO predictor.svh(53) @ 570000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 1010, c: 0
+# UVM_INFO predictor.svh(35) @ 570000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
+# UVM_INFO predictor.svh(50) @ 570000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 1010, c: 0
 # UVM_INFO monitor.svh(34) @ 610000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 610000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -276,14 +280,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 610000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 610000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 610000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 1011, c: 0
+# UVM_INFO sequence.svh(22) @ 610000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 610000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 1011, c: 0
 # UVM_INFO driver.svh(32) @ 610000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 630000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1000, b: 1011, cin: 0
 # UVM_INFO transaction.svh(34) @ 630000: reporter@@tx [TRANSACTION] a = 1000, tx.a = 0010, b = 1011, tx.b = 1010, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 630000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1000, b: 1011, c: 0
-# UVM_INFO predictor.svh(37) @ 630000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 630000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 1011, c: 0
+# UVM_INFO predictor.svh(35) @ 630000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
+# UVM_INFO predictor.svh(50) @ 630000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 1011, c: 0
 # UVM_INFO monitor.svh(34) @ 670000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 670000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -298,14 +302,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 670000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 670000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 670000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1001, c: 1
+# UVM_INFO sequence.svh(22) @ 670000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 670000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1001, c: 1
 # UVM_INFO driver.svh(32) @ 670000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 690000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 1001, cin: 1
 # UVM_INFO transaction.svh(34) @ 690000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 1000, b = 1001, tx.b = 1011, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 690000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 1001, c: 1
-# UVM_INFO predictor.svh(37) @ 690000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 690000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1001, c: 1
+# UVM_INFO predictor.svh(35) @ 690000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
+# UVM_INFO predictor.svh(50) @ 690000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1001, c: 1
 # UVM_INFO monitor.svh(34) @ 730000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 730000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -320,14 +324,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 730000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 730000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 730000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1101, c: 0
+# UVM_INFO sequence.svh(22) @ 730000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 730000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1101, c: 0
 # UVM_INFO driver.svh(32) @ 730000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 750000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1101, cin: 0
 # UVM_INFO transaction.svh(34) @ 750000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 1011, b = 1101, tx.b = 1001, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 750000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1101, c: 0
-# UVM_INFO predictor.svh(37) @ 750000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
-# UVM_INFO predictor.svh(53) @ 750000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1101, c: 0
+# UVM_INFO predictor.svh(35) @ 750000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
+# UVM_INFO predictor.svh(50) @ 750000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1101, c: 0
 # UVM_INFO monitor.svh(34) @ 790000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 790000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -342,14 +346,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 790000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 790000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 790000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1111, c: 0
+# UVM_INFO sequence.svh(22) @ 790000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 790000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1111, c: 0
 # UVM_INFO driver.svh(32) @ 790000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 810000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1111, cin: 0
 # UVM_INFO transaction.svh(34) @ 810000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0111, b = 1111, tx.b = 1101, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 810000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1111, c: 0
-# UVM_INFO predictor.svh(37) @ 810000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
-# UVM_INFO predictor.svh(53) @ 810000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1111, c: 0
+# UVM_INFO predictor.svh(35) @ 810000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
+# UVM_INFO predictor.svh(50) @ 810000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1111, c: 0
 # UVM_INFO monitor.svh(34) @ 850000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 850000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -364,14 +368,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 850000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 850000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 850000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 1000, c: 1
+# UVM_INFO sequence.svh(22) @ 850000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 850000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 1000, c: 1
 # UVM_INFO driver.svh(32) @ 850000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 870000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 1000, cin: 1
 # UVM_INFO transaction.svh(34) @ 870000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 0001, b = 1000, tx.b = 1111, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 870000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 1000, c: 1
-# UVM_INFO predictor.svh(37) @ 870000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 870000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 1000, c: 1
+# UVM_INFO predictor.svh(35) @ 870000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
+# UVM_INFO predictor.svh(50) @ 870000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 1000, c: 1
 # UVM_INFO monitor.svh(34) @ 910000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 910000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -386,14 +390,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 910000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 910000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 910000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0110, c: 1
+# UVM_INFO sequence.svh(22) @ 910000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 910000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0110, c: 1
 # UVM_INFO driver.svh(32) @ 910000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 930000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 0110, cin: 1
 # UVM_INFO transaction.svh(34) @ 930000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 0000, b = 0110, tx.b = 1000, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 930000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 0110, c: 1
-# UVM_INFO predictor.svh(37) @ 930000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00111
-# UVM_INFO predictor.svh(53) @ 930000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0110, c: 1
+# UVM_INFO predictor.svh(35) @ 930000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00111
+# UVM_INFO predictor.svh(50) @ 930000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0110, c: 1
 # UVM_INFO monitor.svh(34) @ 970000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 970000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -408,14 +412,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 970000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 970000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 970000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 0101, c: 1
+# UVM_INFO sequence.svh(22) @ 970000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 970000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 0101, c: 1
 # UVM_INFO driver.svh(32) @ 970000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 990000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1000, b: 0101, cin: 1
 # UVM_INFO transaction.svh(34) @ 990000: reporter@@tx [TRANSACTION] a = 1000, tx.a = 0000, b = 0101, tx.b = 0110, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 990000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1000, b: 0101, c: 1
-# UVM_INFO predictor.svh(37) @ 990000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 990000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 0101, c: 1
+# UVM_INFO predictor.svh(35) @ 990000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
+# UVM_INFO predictor.svh(50) @ 990000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 0101, c: 1
 # UVM_INFO monitor.svh(34) @ 1030000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1030000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -430,14 +434,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 1030000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1030000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1030000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1111, c: 1
+# UVM_INFO sequence.svh(22) @ 1030000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1030000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1111, c: 1
 # UVM_INFO driver.svh(32) @ 1030000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1050000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1110, b: 1111, cin: 1
 # UVM_INFO transaction.svh(34) @ 1050000: reporter@@tx [TRANSACTION] a = 1110, tx.a = 1000, b = 1111, tx.b = 0101, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1050000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1110, b: 1111, c: 1
-# UVM_INFO predictor.svh(37) @ 1050000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11110
-# UVM_INFO predictor.svh(53) @ 1050000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1111, c: 1
+# UVM_INFO predictor.svh(35) @ 1050000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11110
+# UVM_INFO predictor.svh(50) @ 1050000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1111, c: 1
 # UVM_INFO monitor.svh(34) @ 1090000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1090000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -452,14 +456,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1090000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1090000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1090000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1101, c: 1
+# UVM_INFO sequence.svh(22) @ 1090000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1090000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1101, c: 1
 # UVM_INFO driver.svh(32) @ 1090000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1110000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1101, cin: 1
 # UVM_INFO transaction.svh(34) @ 1110000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 1110, b = 1101, tx.b = 1111, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1110000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 1110000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1110000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1101, c: 1
+# UVM_INFO predictor.svh(35) @ 1110000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
+# UVM_INFO predictor.svh(50) @ 1110000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1101, c: 1
 # UVM_INFO monitor.svh(34) @ 1150000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1150000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -474,14 +478,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1150000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1150000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1150000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1010, c: 1
+# UVM_INFO sequence.svh(22) @ 1150000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1150000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1010, c: 1
 # UVM_INFO driver.svh(32) @ 1150000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1170000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1110, b: 1010, cin: 1
 # UVM_INFO transaction.svh(34) @ 1170000: reporter@@tx [TRANSACTION] a = 1110, tx.a = 0111, b = 1010, tx.b = 1101, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1170000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1110, b: 1010, c: 1
-# UVM_INFO predictor.svh(37) @ 1170000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11001
-# UVM_INFO predictor.svh(53) @ 1170000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1010, c: 1
+# UVM_INFO predictor.svh(35) @ 1170000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11001
+# UVM_INFO predictor.svh(50) @ 1170000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1010, c: 1
 # UVM_INFO monitor.svh(34) @ 1210000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1210000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -496,14 +500,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1210000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1210000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1210000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 1101, c: 0
+# UVM_INFO sequence.svh(22) @ 1210000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1210000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 1101, c: 0
 # UVM_INFO driver.svh(32) @ 1210000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1230000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 1101, cin: 0
 # UVM_INFO transaction.svh(34) @ 1230000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 1110, b = 1101, tx.b = 1010, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1230000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 1101, c: 0
-# UVM_INFO predictor.svh(37) @ 1230000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 1230000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 1101, c: 0
+# UVM_INFO predictor.svh(35) @ 1230000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
+# UVM_INFO predictor.svh(50) @ 1230000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 1101, c: 0
 # UVM_INFO monitor.svh(34) @ 1270000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1270000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -518,14 +522,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 1270000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1270000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1270000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1110, c: 0
+# UVM_INFO sequence.svh(22) @ 1270000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1270000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1110, c: 0
 # UVM_INFO driver.svh(32) @ 1270000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1290000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 1110, cin: 0
 # UVM_INFO transaction.svh(34) @ 1290000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 0010, b = 1110, tx.b = 1101, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 1290000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 1110, c: 0
-# UVM_INFO predictor.svh(37) @ 1290000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10111
-# UVM_INFO predictor.svh(53) @ 1290000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1110, c: 0
+# UVM_INFO predictor.svh(35) @ 1290000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10111
+# UVM_INFO predictor.svh(50) @ 1290000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1110, c: 0
 # UVM_INFO monitor.svh(34) @ 1330000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1330000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -540,14 +544,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1330000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1330000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1330000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1100, c: 0
+# UVM_INFO sequence.svh(22) @ 1330000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1330000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1100, c: 0
 # UVM_INFO driver.svh(32) @ 1330000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1350000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 1100, cin: 0
 # UVM_INFO transaction.svh(34) @ 1350000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 1001, b = 1100, tx.b = 1110, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 1350000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 1350000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1350000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1100, c: 0
+# UVM_INFO predictor.svh(35) @ 1350000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
+# UVM_INFO predictor.svh(50) @ 1350000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1100, c: 0
 # UVM_INFO monitor.svh(34) @ 1390000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1390000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -562,14 +566,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1390000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1390000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1390000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 1001, c: 0
+# UVM_INFO sequence.svh(22) @ 1390000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1390000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 1001, c: 0
 # UVM_INFO driver.svh(32) @ 1390000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1410000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 1001, cin: 0
 # UVM_INFO transaction.svh(34) @ 1410000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1001, b = 1001, tx.b = 1100, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 1410000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 1001, c: 0
-# UVM_INFO predictor.svh(37) @ 1410000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
-# UVM_INFO predictor.svh(53) @ 1410000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 1001, c: 0
+# UVM_INFO predictor.svh(35) @ 1410000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
+# UVM_INFO predictor.svh(50) @ 1410000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 1001, c: 0
 # UVM_INFO monitor.svh(34) @ 1450000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1450000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -584,14 +588,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 1450000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1450000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1450000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 0001, c: 1
+# UVM_INFO sequence.svh(22) @ 1450000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1450000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 0001, c: 1
 # UVM_INFO driver.svh(32) @ 1450000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1470000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1000, b: 0001, cin: 1
 # UVM_INFO transaction.svh(34) @ 1470000: reporter@@tx [TRANSACTION] a = 1000, tx.a = 0011, b = 0001, tx.b = 1001, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 1470000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1000, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 1470000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01010
-# UVM_INFO predictor.svh(53) @ 1470000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 0001, c: 1
+# UVM_INFO predictor.svh(35) @ 1470000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01010
+# UVM_INFO predictor.svh(50) @ 1470000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 0001, c: 1
 # UVM_INFO monitor.svh(34) @ 1510000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1510000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -606,14 +610,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 1510000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1510000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1510000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 1100, c: 0
+# UVM_INFO sequence.svh(22) @ 1510000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1510000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 1100, c: 0
 # UVM_INFO driver.svh(32) @ 1510000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1530000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1100, b: 1100, cin: 0
 # UVM_INFO transaction.svh(34) @ 1530000: reporter@@tx [TRANSACTION] a = 1100, tx.a = 1000, b = 1100, tx.b = 0001, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1530000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1100, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 1530000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11000
-# UVM_INFO predictor.svh(53) @ 1530000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 1100, c: 0
+# UVM_INFO predictor.svh(35) @ 1530000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11000
+# UVM_INFO predictor.svh(50) @ 1530000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 1100, c: 0
 # UVM_INFO monitor.svh(34) @ 1570000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1570000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -628,14 +632,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1570000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1570000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1570000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0100, c: 1
+# UVM_INFO sequence.svh(22) @ 1570000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1570000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0100, c: 1
 # UVM_INFO driver.svh(32) @ 1570000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1590000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 0100, cin: 1
 # UVM_INFO transaction.svh(34) @ 1590000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 1100, b = 0100, tx.b = 1100, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 1590000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 0100, c: 1
-# UVM_INFO predictor.svh(37) @ 1590000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10010
-# UVM_INFO predictor.svh(53) @ 1590000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0100, c: 1
+# UVM_INFO predictor.svh(35) @ 1590000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10010
+# UVM_INFO predictor.svh(50) @ 1590000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0100, c: 1
 # UVM_INFO monitor.svh(34) @ 1630000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1630000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -650,14 +654,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1630000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1630000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1630000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1001, c: 1
+# UVM_INFO sequence.svh(22) @ 1630000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1630000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1001, c: 1
 # UVM_INFO driver.svh(32) @ 1630000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1650000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 1001, cin: 1
 # UVM_INFO transaction.svh(34) @ 1650000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 1101, b = 1001, tx.b = 0100, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1650000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 1001, c: 1
-# UVM_INFO predictor.svh(37) @ 1650000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1650000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1001, c: 1
+# UVM_INFO predictor.svh(35) @ 1650000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
+# UVM_INFO predictor.svh(50) @ 1650000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1001, c: 1
 # UVM_INFO monitor.svh(34) @ 1690000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1690000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -672,14 +676,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1690000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1690000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1690000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 1000, c: 1
+# UVM_INFO sequence.svh(22) @ 1690000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1690000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 1000, c: 1
 # UVM_INFO driver.svh(32) @ 1690000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1710000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 1000, cin: 1
 # UVM_INFO transaction.svh(34) @ 1710000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 1011, b = 1000, tx.b = 1001, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1710000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 1000, c: 1
-# UVM_INFO predictor.svh(37) @ 1710000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 1710000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 1000, c: 1
+# UVM_INFO predictor.svh(35) @ 1710000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
+# UVM_INFO predictor.svh(50) @ 1710000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 1000, c: 1
 # UVM_INFO monitor.svh(34) @ 1750000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1750000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -694,14 +698,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1750000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1750000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1750000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0110, c: 1
+# UVM_INFO sequence.svh(22) @ 1750000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1750000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0110, c: 1
 # UVM_INFO driver.svh(32) @ 1750000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1770000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 0110, cin: 1
 # UVM_INFO transaction.svh(34) @ 1770000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 1010, b = 0110, tx.b = 1000, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1770000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 0110, c: 1
-# UVM_INFO predictor.svh(37) @ 1770000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 1770000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0110, c: 1
+# UVM_INFO predictor.svh(35) @ 1770000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
+# UVM_INFO predictor.svh(50) @ 1770000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0110, c: 1
 # UVM_INFO monitor.svh(34) @ 1810000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1810000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -716,14 +720,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 1810000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1810000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1810000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1010, c: 0
+# UVM_INFO sequence.svh(22) @ 1810000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1810000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1010, c: 0
 # UVM_INFO driver.svh(32) @ 1810000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1830000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 1010, cin: 0
 # UVM_INFO transaction.svh(34) @ 1830000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 0110, b = 1010, tx.b = 0110, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 1830000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 1010, c: 0
-# UVM_INFO predictor.svh(37) @ 1830000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1830000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1010, c: 0
+# UVM_INFO predictor.svh(35) @ 1830000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
+# UVM_INFO predictor.svh(50) @ 1830000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1010, c: 0
 # UVM_INFO monitor.svh(34) @ 1870000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1870000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -738,14 +742,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 1870000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1870000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1870000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0011, c: 0
+# UVM_INFO sequence.svh(22) @ 1870000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1870000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0011, c: 0
 # UVM_INFO driver.svh(32) @ 1870000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1890000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 0011, cin: 0
 # UVM_INFO transaction.svh(34) @ 1890000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 1011, b = 0011, tx.b = 1010, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 1890000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 0011, c: 0
-# UVM_INFO predictor.svh(37) @ 1890000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 1890000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0011, c: 0
+# UVM_INFO predictor.svh(35) @ 1890000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
+# UVM_INFO predictor.svh(50) @ 1890000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0011, c: 0
 # UVM_INFO monitor.svh(34) @ 1930000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1930000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -760,14 +764,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 1930000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1930000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1930000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1100, c: 1
+# UVM_INFO sequence.svh(22) @ 1930000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1930000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1100, c: 1
 # UVM_INFO driver.svh(32) @ 1930000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 1950000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1100, cin: 1
 # UVM_INFO transaction.svh(34) @ 1950000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0110, b = 1100, tx.b = 0011, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 1950000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1100, c: 1
-# UVM_INFO predictor.svh(37) @ 1950000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 1950000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1100, c: 1
+# UVM_INFO predictor.svh(35) @ 1950000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
+# UVM_INFO predictor.svh(50) @ 1950000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1100, c: 1
 # UVM_INFO monitor.svh(34) @ 1990000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 1990000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -782,14 +786,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 1990000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1990000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1990000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1110, c: 0
+# UVM_INFO sequence.svh(22) @ 1990000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 1990000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1110, c: 0
 # UVM_INFO driver.svh(32) @ 1990000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2010000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1110, cin: 0
 # UVM_INFO transaction.svh(34) @ 2010000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0001, b = 1110, tx.b = 1100, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2010000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1110, c: 0
-# UVM_INFO predictor.svh(37) @ 2010000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 2010000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1110, c: 0
+# UVM_INFO predictor.svh(35) @ 2010000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
+# UVM_INFO predictor.svh(50) @ 2010000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1110, c: 0
 # UVM_INFO monitor.svh(34) @ 2050000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2050000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -804,14 +808,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2050000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2050000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2050000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 0011, c: 1
+# UVM_INFO sequence.svh(22) @ 2050000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2050000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 0011, c: 1
 # UVM_INFO driver.svh(32) @ 2050000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2070000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 0011, cin: 1
 # UVM_INFO transaction.svh(34) @ 2070000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0001, b = 0011, tx.b = 1110, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 2070000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 0011, c: 1
-# UVM_INFO predictor.svh(37) @ 2070000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 2070000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 0011, c: 1
+# UVM_INFO predictor.svh(35) @ 2070000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
+# UVM_INFO predictor.svh(50) @ 2070000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 0011, c: 1
 # UVM_INFO monitor.svh(34) @ 2110000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2110000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -826,14 +830,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2110000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2110000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2110000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0100, b: 0001, c: 1
+# UVM_INFO sequence.svh(22) @ 2110000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2110000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0100, b: 0001, c: 1
 # UVM_INFO driver.svh(32) @ 2110000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2130000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0100, b: 0001, cin: 1
 # UVM_INFO transaction.svh(34) @ 2130000: reporter@@tx [TRANSACTION] a = 0100, tx.a = 0101, b = 0001, tx.b = 0011, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2130000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0100, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 2130000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
-# UVM_INFO predictor.svh(53) @ 2130000: uvm_test_top.env.pred [PREDICTOR] a: 0100, b: 0001, c: 1
+# UVM_INFO predictor.svh(35) @ 2130000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
+# UVM_INFO predictor.svh(50) @ 2130000: uvm_test_top.env.pred [PREDICTOR] a: 0100, b: 0001, c: 1
 # UVM_INFO monitor.svh(34) @ 2170000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2170000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -848,14 +852,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2170000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2170000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2170000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1011, c: 0
+# UVM_INFO sequence.svh(22) @ 2170000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2170000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1011, c: 0
 # UVM_INFO driver.svh(32) @ 2170000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2190000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1011, cin: 0
 # UVM_INFO transaction.svh(34) @ 2190000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0100, b = 1011, tx.b = 0001, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2190000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1011, c: 0
-# UVM_INFO predictor.svh(37) @ 2190000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
-# UVM_INFO predictor.svh(53) @ 2190000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1011, c: 0
+# UVM_INFO predictor.svh(35) @ 2190000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
+# UVM_INFO predictor.svh(50) @ 2190000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1011, c: 0
 # UVM_INFO monitor.svh(34) @ 2230000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2230000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -870,14 +874,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 2230000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2230000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2230000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0001, c: 1
+# UVM_INFO sequence.svh(22) @ 2230000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2230000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0001, c: 1
 # UVM_INFO driver.svh(32) @ 2230000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2250000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 0001, cin: 1
 # UVM_INFO transaction.svh(34) @ 2250000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0101, b = 0001, tx.b = 1011, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 2250000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 2250000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00100
-# UVM_INFO predictor.svh(53) @ 2250000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0001, c: 1
+# UVM_INFO predictor.svh(35) @ 2250000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00100
+# UVM_INFO predictor.svh(50) @ 2250000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0001, c: 1
 # UVM_INFO monitor.svh(34) @ 2290000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2290000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -892,14 +896,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2290000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2290000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2290000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0010, c: 1
+# UVM_INFO sequence.svh(22) @ 2290000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2290000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0010, c: 1
 # UVM_INFO driver.svh(32) @ 2290000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2310000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 0010, cin: 1
 # UVM_INFO transaction.svh(34) @ 2310000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 0010, b = 0010, tx.b = 0001, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2310000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 0010, c: 1
-# UVM_INFO predictor.svh(37) @ 2310000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 2310000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0010, c: 1
+# UVM_INFO predictor.svh(35) @ 2310000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
+# UVM_INFO predictor.svh(50) @ 2310000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0010, c: 1
 # UVM_INFO monitor.svh(34) @ 2350000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2350000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -914,14 +918,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2350000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2350000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2350000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1100, c: 1
+# UVM_INFO sequence.svh(22) @ 2350000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2350000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1100, c: 1
 # UVM_INFO driver.svh(32) @ 2350000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2370000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1100, cin: 1
 # UVM_INFO transaction.svh(34) @ 2370000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 0110, b = 1100, tx.b = 0010, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2370000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1100, c: 1
-# UVM_INFO predictor.svh(37) @ 2370000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
-# UVM_INFO predictor.svh(53) @ 2370000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1100, c: 1
+# UVM_INFO predictor.svh(35) @ 2370000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
+# UVM_INFO predictor.svh(50) @ 2370000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1100, c: 1
 # UVM_INFO monitor.svh(34) @ 2410000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2410000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -936,14 +940,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 2410000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2410000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2410000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1101, c: 1
+# UVM_INFO sequence.svh(22) @ 2410000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2410000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1101, c: 1
 # UVM_INFO driver.svh(32) @ 2410000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2430000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1101, cin: 1
 # UVM_INFO transaction.svh(34) @ 2430000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0111, b = 1101, tx.b = 1100, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2430000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 2430000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 2430000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1101, c: 1
+# UVM_INFO predictor.svh(35) @ 2430000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
+# UVM_INFO predictor.svh(50) @ 2430000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1101, c: 1
 # UVM_INFO monitor.svh(34) @ 2470000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2470000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -958,14 +962,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 2470000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2470000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2470000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 1100, c: 0
+# UVM_INFO sequence.svh(22) @ 2470000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2470000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 1100, c: 0
 # UVM_INFO driver.svh(32) @ 2470000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2490000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 1100, cin: 0
 # UVM_INFO transaction.svh(34) @ 2490000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 0101, b = 1100, tx.b = 1101, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2490000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 2490000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11001
-# UVM_INFO predictor.svh(53) @ 2490000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 1100, c: 0
+# UVM_INFO predictor.svh(35) @ 2490000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11001
+# UVM_INFO predictor.svh(50) @ 2490000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 1100, c: 0
 # UVM_INFO monitor.svh(34) @ 2530000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2530000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -980,14 +984,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 2530000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2530000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2530000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0101, c: 0
+# UVM_INFO sequence.svh(22) @ 2530000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2530000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0101, c: 0
 # UVM_INFO driver.svh(32) @ 2530000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2550000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0101, cin: 0
 # UVM_INFO transaction.svh(34) @ 2550000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 1101, b = 0101, tx.b = 1100, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 2550000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0101, c: 0
-# UVM_INFO predictor.svh(37) @ 2550000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 2550000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0101, c: 0
+# UVM_INFO predictor.svh(35) @ 2550000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
+# UVM_INFO predictor.svh(50) @ 2550000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0101, c: 0
 # UVM_INFO monitor.svh(34) @ 2590000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2590000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1002,14 +1006,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2590000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2590000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2590000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0011, c: 0
+# UVM_INFO sequence.svh(22) @ 2590000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2590000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0011, c: 0
 # UVM_INFO driver.svh(32) @ 2590000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2610000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0011, cin: 0
 # UVM_INFO transaction.svh(34) @ 2610000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 1010, b = 0011, tx.b = 0101, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 2610000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0011, c: 0
-# UVM_INFO predictor.svh(37) @ 2610000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 2610000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0011, c: 0
+# UVM_INFO predictor.svh(35) @ 2610000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
+# UVM_INFO predictor.svh(50) @ 2610000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0011, c: 0
 # UVM_INFO monitor.svh(34) @ 2650000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2650000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1024,14 +1028,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2650000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2650000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2650000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0001, c: 0
+# UVM_INFO sequence.svh(22) @ 2650000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2650000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0001, c: 0
 # UVM_INFO driver.svh(32) @ 2650000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2670000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 0001, cin: 0
 # UVM_INFO transaction.svh(34) @ 2670000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 1010, b = 0001, tx.b = 0011, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 2670000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 0001, c: 0
-# UVM_INFO predictor.svh(37) @ 2670000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 2670000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0001, c: 0
+# UVM_INFO predictor.svh(35) @ 2670000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
+# UVM_INFO predictor.svh(50) @ 2670000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0001, c: 0
 # UVM_INFO monitor.svh(34) @ 2710000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2710000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1046,14 +1050,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2710000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2710000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2710000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0011, c: 1
+# UVM_INFO sequence.svh(22) @ 2710000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2710000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0011, c: 1
 # UVM_INFO driver.svh(32) @ 2710000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2730000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 0011, cin: 1
 # UVM_INFO transaction.svh(34) @ 2730000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 1101, b = 0011, tx.b = 0001, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 2730000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 0011, c: 1
-# UVM_INFO predictor.svh(37) @ 2730000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00100
-# UVM_INFO predictor.svh(53) @ 2730000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0011, c: 1
+# UVM_INFO predictor.svh(35) @ 2730000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00100
+# UVM_INFO predictor.svh(50) @ 2730000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0011, c: 1
 # UVM_INFO monitor.svh(34) @ 2770000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2770000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1068,14 +1072,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2770000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2770000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2770000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1011, c: 1
+# UVM_INFO sequence.svh(22) @ 2770000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2770000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1011, c: 1
 # UVM_INFO driver.svh(32) @ 2770000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2790000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1011, cin: 1
 # UVM_INFO transaction.svh(34) @ 2790000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0000, b = 1011, tx.b = 0011, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2790000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1011, c: 1
-# UVM_INFO predictor.svh(37) @ 2790000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 2790000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1011, c: 1
+# UVM_INFO predictor.svh(35) @ 2790000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
+# UVM_INFO predictor.svh(50) @ 2790000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1011, c: 1
 # UVM_INFO monitor.svh(34) @ 2830000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2830000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1090,14 +1094,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2830000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2830000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2830000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1000, c: 1
+# UVM_INFO sequence.svh(22) @ 2830000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2830000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1000, c: 1
 # UVM_INFO driver.svh(32) @ 2830000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2850000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1000, cin: 1
 # UVM_INFO transaction.svh(34) @ 2850000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0001, b = 1000, tx.b = 1011, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2850000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1000, c: 1
-# UVM_INFO predictor.svh(37) @ 2850000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 2850000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1000, c: 1
+# UVM_INFO predictor.svh(35) @ 2850000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
+# UVM_INFO predictor.svh(50) @ 2850000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1000, c: 1
 # UVM_INFO monitor.svh(34) @ 2890000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2890000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1112,14 +1116,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 2890000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2890000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2890000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1110, c: 0
+# UVM_INFO sequence.svh(22) @ 2890000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2890000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1110, c: 0
 # UVM_INFO driver.svh(32) @ 2890000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2910000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1110, b: 1110, cin: 0
 # UVM_INFO transaction.svh(34) @ 2910000: reporter@@tx [TRANSACTION] a = 1110, tx.a = 0101, b = 1110, tx.b = 1000, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 2910000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1110, b: 1110, c: 0
-# UVM_INFO predictor.svh(37) @ 2910000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11100
-# UVM_INFO predictor.svh(53) @ 2910000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1110, c: 0
+# UVM_INFO predictor.svh(35) @ 2910000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11100
+# UVM_INFO predictor.svh(50) @ 2910000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1110, c: 0
 # UVM_INFO monitor.svh(34) @ 2950000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 2950000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1134,14 +1138,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 2950000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2950000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2950000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0100, c: 0
+# UVM_INFO sequence.svh(22) @ 2950000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 2950000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0100, c: 0
 # UVM_INFO driver.svh(32) @ 2950000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 2970000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 0100, cin: 0
 # UVM_INFO transaction.svh(34) @ 2970000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1110, b = 0100, tx.b = 1110, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 2970000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 0100, c: 0
-# UVM_INFO predictor.svh(37) @ 2970000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00111
-# UVM_INFO predictor.svh(53) @ 2970000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0100, c: 0
+# UVM_INFO predictor.svh(35) @ 2970000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00111
+# UVM_INFO predictor.svh(50) @ 2970000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0100, c: 0
 # UVM_INFO monitor.svh(34) @ 3010000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3010000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1156,14 +1160,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 3010000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3010000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3010000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0010, c: 0
+# UVM_INFO sequence.svh(22) @ 3010000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3010000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0010, c: 0
 # UVM_INFO driver.svh(32) @ 3010000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3030000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0010, cin: 0
 # UVM_INFO transaction.svh(34) @ 3030000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 0011, b = 0010, tx.b = 0100, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 3030000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0010, c: 0
-# UVM_INFO predictor.svh(37) @ 3030000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
-# UVM_INFO predictor.svh(53) @ 3030000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0010, c: 0
+# UVM_INFO predictor.svh(35) @ 3030000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
+# UVM_INFO predictor.svh(50) @ 3030000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0010, c: 0
 # UVM_INFO monitor.svh(34) @ 3070000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3070000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1178,14 +1182,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 3070000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3070000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3070000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 1100, c: 0
+# UVM_INFO sequence.svh(22) @ 3070000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3070000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 1100, c: 0
 # UVM_INFO driver.svh(32) @ 3070000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3090000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1100, b: 1100, cin: 0
 # UVM_INFO transaction.svh(34) @ 3090000: reporter@@tx [TRANSACTION] a = 1100, tx.a = 1010, b = 1100, tx.b = 0010, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 3090000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1100, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 3090000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11000
-# UVM_INFO predictor.svh(53) @ 3090000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 1100, c: 0
+# UVM_INFO predictor.svh(35) @ 3090000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11000
+# UVM_INFO predictor.svh(50) @ 3090000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 1100, c: 0
 # UVM_INFO monitor.svh(34) @ 3130000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3130000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1200,14 +1204,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 3130000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1101, c: 0
+# UVM_INFO sequence.svh(22) @ 3130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1101, c: 0
 # UVM_INFO driver.svh(32) @ 3130000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3150000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 1101, cin: 0
 # UVM_INFO transaction.svh(34) @ 3150000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 1100, b = 1101, tx.b = 1100, carry_in = 0, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 3150000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 1101, c: 0
-# UVM_INFO predictor.svh(37) @ 3150000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10110
-# UVM_INFO predictor.svh(53) @ 3150000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1101, c: 0
+# UVM_INFO predictor.svh(35) @ 3150000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10110
+# UVM_INFO predictor.svh(50) @ 3150000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1101, c: 0
 # UVM_INFO monitor.svh(34) @ 3190000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3190000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1222,14 +1226,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 3190000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0001, c: 1
+# UVM_INFO sequence.svh(22) @ 3190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0001, c: 1
 # UVM_INFO driver.svh(32) @ 3190000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3210000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 0001, cin: 1
 # UVM_INFO transaction.svh(34) @ 3210000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1001, b = 0001, tx.b = 1101, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 3210000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 3210000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00101
-# UVM_INFO predictor.svh(53) @ 3210000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0001, c: 1
+# UVM_INFO predictor.svh(35) @ 3210000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00101
+# UVM_INFO predictor.svh(50) @ 3210000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0001, c: 1
 # UVM_INFO monitor.svh(34) @ 3250000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3250000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1244,14 +1248,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 3250000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0010, c: 0
+# UVM_INFO sequence.svh(22) @ 3250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0010, c: 0
 # UVM_INFO driver.svh(32) @ 3250000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3270000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 0010, cin: 0
 # UVM_INFO transaction.svh(34) @ 3270000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 0011, b = 0010, tx.b = 0001, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 3270000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 0010, c: 0
-# UVM_INFO predictor.svh(37) @ 3270000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 3270000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0010, c: 0
+# UVM_INFO predictor.svh(35) @ 3270000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
+# UVM_INFO predictor.svh(50) @ 3270000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0010, c: 0
 # UVM_INFO monitor.svh(34) @ 3310000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3310000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1266,14 +1270,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 3310000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0001, c: 1
+# UVM_INFO sequence.svh(22) @ 3310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0001, c: 1
 # UVM_INFO driver.svh(32) @ 3310000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3330000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 0001, cin: 1
 # UVM_INFO transaction.svh(34) @ 3330000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1101, b = 0001, tx.b = 0010, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 3330000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 3330000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00101
-# UVM_INFO predictor.svh(53) @ 3330000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0001, c: 1
+# UVM_INFO predictor.svh(35) @ 3330000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00101
+# UVM_INFO predictor.svh(50) @ 3330000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0001, c: 1
 # UVM_INFO monitor.svh(34) @ 3370000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3370000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1288,14 +1292,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 3370000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1101, c: 1
+# UVM_INFO sequence.svh(22) @ 3370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1101, c: 1
 # UVM_INFO driver.svh(32) @ 3370000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3390000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1101, cin: 1
 # UVM_INFO transaction.svh(34) @ 3390000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0011, b = 1101, tx.b = 0001, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 3390000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 3390000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 3390000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1101, c: 1
+# UVM_INFO predictor.svh(35) @ 3390000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
+# UVM_INFO predictor.svh(50) @ 3390000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1101, c: 1
 # UVM_INFO monitor.svh(34) @ 3430000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3430000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1310,14 +1314,14 @@ run -all
 # carry_out: 1
 # 
 # UVM_INFO @ 3430000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 0000, c: 1
+# UVM_INFO sequence.svh(22) @ 3430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 0000, c: 1
 # UVM_INFO driver.svh(32) @ 3430000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3450000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 0000, cin: 1
 # UVM_INFO transaction.svh(34) @ 3450000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0101, b = 0000, tx.b = 1101, carry_in = 1, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 3450000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 0000, c: 1
-# UVM_INFO predictor.svh(37) @ 3450000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
-# UVM_INFO predictor.svh(53) @ 3450000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 0000, c: 1
+# UVM_INFO predictor.svh(35) @ 3450000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
+# UVM_INFO predictor.svh(50) @ 3450000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 0000, c: 1
 # UVM_INFO monitor.svh(34) @ 3490000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3490000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1332,14 +1336,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 3490000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0001, c: 0
+# UVM_INFO sequence.svh(22) @ 3490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0001, c: 0
 # UVM_INFO driver.svh(32) @ 3490000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3510000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0001, cin: 0
 # UVM_INFO transaction.svh(34) @ 3510000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 0101, b = 0001, tx.b = 0000, carry_in = 0, tx.carry_in = 1
 # UVM_INFO monitor.svh(45) @ 3510000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0001, c: 0
-# UVM_INFO predictor.svh(37) @ 3510000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01011
-# UVM_INFO predictor.svh(53) @ 3510000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0001, c: 0
+# UVM_INFO predictor.svh(35) @ 3510000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01011
+# UVM_INFO predictor.svh(50) @ 3510000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0001, c: 0
 # UVM_INFO monitor.svh(34) @ 3550000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3550000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1354,14 +1358,14 @@ run -all
 # carry_out: 0
 # 
 # UVM_INFO @ 3550000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0011, c: 1
+# UVM_INFO sequence.svh(22) @ 3550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
+# UVM_INFO sequence.svh(23) @ 3550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0011, c: 1
 # UVM_INFO driver.svh(32) @ 3550000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
 # UVM_INFO driver.svh(37) @ 3570000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 0011, cin: 1
 # UVM_INFO transaction.svh(34) @ 3570000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 1010, b = 0011, tx.b = 0001, carry_in = 1, tx.carry_in = 0
 # UVM_INFO monitor.svh(45) @ 3570000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 0011, c: 1
-# UVM_INFO predictor.svh(37) @ 3570000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
-# UVM_INFO predictor.svh(53) @ 3570000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0011, c: 1
+# UVM_INFO predictor.svh(35) @ 3570000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
+# UVM_INFO predictor.svh(50) @ 3570000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0011, c: 1
 # UVM_INFO monitor.svh(34) @ 3610000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
 # UVM_INFO @ 3610000: uvm_test_top.env.comp [Comparator] 
 # expected:
@@ -1411,1400 +1415,5 @@ run -all
 # 
 # ** Note: $finish    : /package/eda/mg/questa10.6b/questasim/linux_x86_64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
 #    Time: 3710 ns  Iteration: 68  Instance: /tb_adder
-# 1
-# Break in Task uvm_pkg/uvm_root::run_test at /package/eda/mg/questa10.6b/questasim/linux_x86_64/../verilog_src/uvm-1.2/src/base/uvm_root.svh line 517
-add wave -position insertpoint sim:/tb_adder/adder/add_if/*
-run -all
-restart
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Loading /tmp/socet67@asicfab.ecn.purdue.edu_dpi_83367/linux_x86_64_gcc-5.3.0/vsim_auto_compile.so
-# Loading /package/eda/mg/questa10.6b/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
-run -all
-# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
-# ----------------------------------------------------------------
-# UVM-1.2
-# (C) 2007-2014 Mentor Graphics Corporation
-# (C) 2007-2014 Cadence Design Systems, Inc.
-# (C) 2006-2014 Synopsys, Inc.
-# (C) 2011-2013 Cypress Semiconductor Corp.
-# (C) 2013-2014 NVIDIA Corporation
-# ----------------------------------------------------------------
-# 
-#   ***********       IMPORTANT RELEASE NOTES         ************
-# 
-#   You are using a version of the UVM library that has been compiled
-#   with `UVM_NO_DEPRECATED undefined.
-#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
-# 
-#   You are using a version of the UVM library that has been compiled
-#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
-#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
-# 
-#       (Specify +UVM_NO_RELNOTES to turn off this notice)
-# 
-# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
-# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
-# UVM_INFO @ 0: reporter [RNTST] Running test test...
-#                    0 Starting sequence run_phase
-# UVM_INFO monitor.svh(34) @ 0: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO transaction.svh(34) @ 10000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 0000, b = 0000, tx.b = 0000, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(34) @ 10000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO sequence.svh(23) @ 10000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 10000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 0110, c: 0
-# UVM_INFO driver.svh(32) @ 10000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 30000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 0110, cin: 0
-# UVM_INFO transaction.svh(34) @ 30000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 0000, b = 0110, tx.b = 0000, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 30000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 0110, c: 0
-# UVM_INFO predictor.svh(37) @ 30000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 30000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 0110, c: 0
-# UVM_INFO monitor.svh(34) @ 70000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 70000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1001
-# b: 0110
-# carry_in: 0
-# sum: 1111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1111
-# carry_out: 0
-# 
-# UVM_INFO @ 70000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 70000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 70000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 0110, c: 0
-# UVM_INFO driver.svh(32) @ 70000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 90000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 0110, cin: 0
-# UVM_INFO transaction.svh(34) @ 90000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 1001, b = 0110, tx.b = 0110, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 90000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 0110, c: 0
-# UVM_INFO predictor.svh(37) @ 90000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10001
-# UVM_INFO predictor.svh(53) @ 90000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 0110, c: 0
-# UVM_INFO monitor.svh(34) @ 130000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 130000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1011
-# b: 0110
-# carry_in: 0
-# sum: 0001
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0001
-# carry_out: 1
-# 
-# UVM_INFO @ 130000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0010, c: 0
-# UVM_INFO driver.svh(32) @ 130000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 150000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 0010, cin: 0
-# UVM_INFO transaction.svh(34) @ 150000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 1011, b = 0010, tx.b = 0110, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 150000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 0010, c: 0
-# UVM_INFO predictor.svh(37) @ 150000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00010
-# UVM_INFO predictor.svh(53) @ 150000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0010, c: 0
-# UVM_INFO monitor.svh(34) @ 190000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 190000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0000
-# b: 0010
-# carry_in: 0
-# sum: 0010
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0010
-# carry_out: 0
-# 
-# UVM_INFO @ 190000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1001, c: 0
-# UVM_INFO driver.svh(32) @ 190000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 210000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1001, cin: 0
-# UVM_INFO transaction.svh(34) @ 210000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 0000, b = 1001, tx.b = 0010, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 210000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1001, c: 0
-# UVM_INFO predictor.svh(37) @ 210000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
-# UVM_INFO predictor.svh(53) @ 210000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1001, c: 0
-# UVM_INFO monitor.svh(34) @ 250000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 250000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0111
-# b: 1001
-# carry_in: 0
-# sum: 0000
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0000
-# carry_out: 1
-# 
-# UVM_INFO @ 250000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1111, b: 0111, c: 0
-# UVM_INFO driver.svh(32) @ 250000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 270000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1111, b: 0111, cin: 0
-# UVM_INFO transaction.svh(34) @ 270000: reporter@@tx [TRANSACTION] a = 1111, tx.a = 0111, b = 0111, tx.b = 1001, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 270000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1111, b: 0111, c: 0
-# UVM_INFO predictor.svh(37) @ 270000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10110
-# UVM_INFO predictor.svh(53) @ 270000: uvm_test_top.env.pred [PREDICTOR] a: 1111, b: 0111, c: 0
-# UVM_INFO monitor.svh(34) @ 310000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 310000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1111
-# b: 0111
-# carry_in: 0
-# sum: 0110
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0110
-# carry_out: 1
-# 
-# UVM_INFO @ 310000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 0011, c: 0
-# UVM_INFO driver.svh(32) @ 310000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 330000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1100, b: 0011, cin: 0
-# UVM_INFO transaction.svh(34) @ 330000: reporter@@tx [TRANSACTION] a = 1100, tx.a = 1111, b = 0011, tx.b = 0111, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 330000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1100, b: 0011, c: 0
-# UVM_INFO predictor.svh(37) @ 330000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 330000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 0011, c: 0
-# UVM_INFO monitor.svh(34) @ 370000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 370000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1100
-# b: 0011
-# carry_in: 0
-# sum: 1111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1111
-# carry_out: 0
-# 
-# UVM_INFO @ 370000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0001, c: 0
-# UVM_INFO driver.svh(32) @ 370000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 390000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 0001, cin: 0
-# UVM_INFO transaction.svh(34) @ 390000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 1100, b = 0001, tx.b = 0011, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 390000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 0001, c: 0
-# UVM_INFO predictor.svh(37) @ 390000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00011
-# UVM_INFO predictor.svh(53) @ 390000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0001, c: 0
-# UVM_INFO monitor.svh(34) @ 430000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 430000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0010
-# b: 0001
-# carry_in: 0
-# sum: 0011
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0011
-# carry_out: 0
-# 
-# UVM_INFO @ 430000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1100, c: 0
-# UVM_INFO driver.svh(32) @ 430000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 450000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1100, cin: 0
-# UVM_INFO transaction.svh(34) @ 450000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0010, b = 1100, tx.b = 0001, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 450000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 450000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 450000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1100, c: 0
-# UVM_INFO monitor.svh(34) @ 490000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 490000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0001
-# b: 1100
-# carry_in: 0
-# sum: 1101
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1101
-# carry_out: 0
-# 
-# UVM_INFO @ 490000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 1101, c: 1
-# UVM_INFO driver.svh(32) @ 490000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 510000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 1101, cin: 1
-# UVM_INFO transaction.svh(34) @ 510000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 0001, b = 1101, tx.b = 1100, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 510000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 510000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
-# UVM_INFO predictor.svh(53) @ 510000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 1101, c: 1
-# UVM_INFO monitor.svh(34) @ 550000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 550000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0110
-# b: 1101
-# carry_in: 1
-# sum: 0100
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0100
-# carry_out: 1
-# 
-# UVM_INFO @ 550000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 1010, c: 0
-# UVM_INFO driver.svh(32) @ 550000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 570000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 1010, cin: 0
-# UVM_INFO transaction.svh(34) @ 570000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0110, b = 1010, tx.b = 1101, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 570000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 1010, c: 0
-# UVM_INFO predictor.svh(37) @ 570000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
-# UVM_INFO predictor.svh(53) @ 570000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 1010, c: 0
-# UVM_INFO monitor.svh(34) @ 610000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 610000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0010
-# b: 1010
-# carry_in: 0
-# sum: 1100
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1100
-# carry_out: 0
-# 
-# UVM_INFO @ 610000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 610000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 610000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 1011, c: 0
-# UVM_INFO driver.svh(32) @ 610000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 630000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1000, b: 1011, cin: 0
-# UVM_INFO transaction.svh(34) @ 630000: reporter@@tx [TRANSACTION] a = 1000, tx.a = 0010, b = 1011, tx.b = 1010, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 630000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1000, b: 1011, c: 0
-# UVM_INFO predictor.svh(37) @ 630000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 630000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 1011, c: 0
-# UVM_INFO monitor.svh(34) @ 670000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 670000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1000
-# b: 1011
-# carry_in: 0
-# sum: 0011
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0011
-# carry_out: 1
-# 
-# UVM_INFO @ 670000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 670000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 670000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1001, c: 1
-# UVM_INFO driver.svh(32) @ 670000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 690000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 1001, cin: 1
-# UVM_INFO transaction.svh(34) @ 690000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 1000, b = 1001, tx.b = 1011, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 690000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 1001, c: 1
-# UVM_INFO predictor.svh(37) @ 690000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 690000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1001, c: 1
-# UVM_INFO monitor.svh(34) @ 730000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 730000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1011
-# b: 1001
-# carry_in: 1
-# sum: 0101
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0101
-# carry_out: 1
-# 
-# UVM_INFO @ 730000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 730000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 730000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1101, c: 0
-# UVM_INFO driver.svh(32) @ 730000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 750000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1101, cin: 0
-# UVM_INFO transaction.svh(34) @ 750000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 1011, b = 1101, tx.b = 1001, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 750000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1101, c: 0
-# UVM_INFO predictor.svh(37) @ 750000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
-# UVM_INFO predictor.svh(53) @ 750000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1101, c: 0
-# UVM_INFO monitor.svh(34) @ 790000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 790000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0111
-# b: 1101
-# carry_in: 0
-# sum: 0100
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0100
-# carry_out: 1
-# 
-# UVM_INFO @ 790000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 790000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 790000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1111, c: 0
-# UVM_INFO driver.svh(32) @ 790000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 810000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1111, cin: 0
-# UVM_INFO transaction.svh(34) @ 810000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0111, b = 1111, tx.b = 1101, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 810000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1111, c: 0
-# UVM_INFO predictor.svh(37) @ 810000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
-# UVM_INFO predictor.svh(53) @ 810000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1111, c: 0
-# UVM_INFO monitor.svh(34) @ 850000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 850000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0001
-# b: 1111
-# carry_in: 0
-# sum: 0000
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0000
-# carry_out: 1
-# 
-# UVM_INFO @ 850000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 850000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 850000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 1000, c: 1
-# UVM_INFO driver.svh(32) @ 850000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 870000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 1000, cin: 1
-# UVM_INFO transaction.svh(34) @ 870000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 0001, b = 1000, tx.b = 1111, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 870000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 1000, c: 1
-# UVM_INFO predictor.svh(37) @ 870000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 870000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 1000, c: 1
-# UVM_INFO monitor.svh(34) @ 910000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 910000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0000
-# b: 1000
-# carry_in: 1
-# sum: 1001
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1001
-# carry_out: 0
-# 
-# UVM_INFO @ 910000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 910000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 910000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0110, c: 1
-# UVM_INFO driver.svh(32) @ 910000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 930000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 0110, cin: 1
-# UVM_INFO transaction.svh(34) @ 930000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 0000, b = 0110, tx.b = 1000, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 930000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 0110, c: 1
-# UVM_INFO predictor.svh(37) @ 930000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00111
-# UVM_INFO predictor.svh(53) @ 930000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0110, c: 1
-# UVM_INFO monitor.svh(34) @ 970000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 970000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0000
-# b: 0110
-# carry_in: 1
-# sum: 0111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0111
-# carry_out: 0
-# 
-# UVM_INFO @ 970000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 970000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 970000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 0101, c: 1
-# UVM_INFO driver.svh(32) @ 970000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 990000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1000, b: 0101, cin: 1
-# UVM_INFO transaction.svh(34) @ 990000: reporter@@tx [TRANSACTION] a = 1000, tx.a = 0000, b = 0101, tx.b = 0110, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 990000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1000, b: 0101, c: 1
-# UVM_INFO predictor.svh(37) @ 990000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 990000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 0101, c: 1
-# UVM_INFO monitor.svh(34) @ 1030000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1030000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1000
-# b: 0101
-# carry_in: 1
-# sum: 1110
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1110
-# carry_out: 0
-# 
-# UVM_INFO @ 1030000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1030000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1030000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1111, c: 1
-# UVM_INFO driver.svh(32) @ 1030000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1050000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1110, b: 1111, cin: 1
-# UVM_INFO transaction.svh(34) @ 1050000: reporter@@tx [TRANSACTION] a = 1110, tx.a = 1000, b = 1111, tx.b = 0101, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1050000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1110, b: 1111, c: 1
-# UVM_INFO predictor.svh(37) @ 1050000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11110
-# UVM_INFO predictor.svh(53) @ 1050000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1111, c: 1
-# UVM_INFO monitor.svh(34) @ 1090000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1090000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1110
-# b: 1111
-# carry_in: 1
-# sum: 1110
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1110
-# carry_out: 1
-# 
-# UVM_INFO @ 1090000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1090000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1090000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1101, c: 1
-# UVM_INFO driver.svh(32) @ 1090000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1110000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1101, cin: 1
-# UVM_INFO transaction.svh(34) @ 1110000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 1110, b = 1101, tx.b = 1111, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1110000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 1110000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1110000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1101, c: 1
-# UVM_INFO monitor.svh(34) @ 1150000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1150000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0111
-# b: 1101
-# carry_in: 1
-# sum: 0101
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0101
-# carry_out: 1
-# 
-# UVM_INFO @ 1150000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1150000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1150000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1010, c: 1
-# UVM_INFO driver.svh(32) @ 1150000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1170000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1110, b: 1010, cin: 1
-# UVM_INFO transaction.svh(34) @ 1170000: reporter@@tx [TRANSACTION] a = 1110, tx.a = 0111, b = 1010, tx.b = 1101, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1170000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1110, b: 1010, c: 1
-# UVM_INFO predictor.svh(37) @ 1170000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11001
-# UVM_INFO predictor.svh(53) @ 1170000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1010, c: 1
-# UVM_INFO monitor.svh(34) @ 1210000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1210000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1110
-# b: 1010
-# carry_in: 1
-# sum: 1001
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1001
-# carry_out: 1
-# 
-# UVM_INFO @ 1210000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1210000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1210000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 1101, c: 0
-# UVM_INFO driver.svh(32) @ 1210000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1230000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 1101, cin: 0
-# UVM_INFO transaction.svh(34) @ 1230000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 1110, b = 1101, tx.b = 1010, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1230000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 1101, c: 0
-# UVM_INFO predictor.svh(37) @ 1230000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 1230000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 1101, c: 0
-# UVM_INFO monitor.svh(34) @ 1270000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1270000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0010
-# b: 1101
-# carry_in: 0
-# sum: 1111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1111
-# carry_out: 0
-# 
-# UVM_INFO @ 1270000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1270000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1270000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1110, c: 0
-# UVM_INFO driver.svh(32) @ 1270000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1290000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 1110, cin: 0
-# UVM_INFO transaction.svh(34) @ 1290000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 0010, b = 1110, tx.b = 1101, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 1290000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 1110, c: 0
-# UVM_INFO predictor.svh(37) @ 1290000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10111
-# UVM_INFO predictor.svh(53) @ 1290000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1110, c: 0
-# UVM_INFO monitor.svh(34) @ 1330000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1330000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1001
-# b: 1110
-# carry_in: 0
-# sum: 0111
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0111
-# carry_out: 1
-# 
-# UVM_INFO @ 1330000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1330000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1330000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1100, c: 0
-# UVM_INFO driver.svh(32) @ 1330000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1350000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 1100, cin: 0
-# UVM_INFO transaction.svh(34) @ 1350000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 1001, b = 1100, tx.b = 1110, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 1350000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 1350000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1350000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1100, c: 0
-# UVM_INFO monitor.svh(34) @ 1390000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1390000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1001
-# b: 1100
-# carry_in: 0
-# sum: 0101
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0101
-# carry_out: 1
-# 
-# UVM_INFO @ 1390000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1390000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1390000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 1001, c: 0
-# UVM_INFO driver.svh(32) @ 1390000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1410000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 1001, cin: 0
-# UVM_INFO transaction.svh(34) @ 1410000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1001, b = 1001, tx.b = 1100, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 1410000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 1001, c: 0
-# UVM_INFO predictor.svh(37) @ 1410000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
-# UVM_INFO predictor.svh(53) @ 1410000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 1001, c: 0
-# UVM_INFO monitor.svh(34) @ 1450000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1450000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0011
-# b: 1001
-# carry_in: 0
-# sum: 1100
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1100
-# carry_out: 0
-# 
-# UVM_INFO @ 1450000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1450000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1450000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1000, b: 0001, c: 1
-# UVM_INFO driver.svh(32) @ 1450000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1470000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1000, b: 0001, cin: 1
-# UVM_INFO transaction.svh(34) @ 1470000: reporter@@tx [TRANSACTION] a = 1000, tx.a = 0011, b = 0001, tx.b = 1001, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 1470000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1000, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 1470000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01010
-# UVM_INFO predictor.svh(53) @ 1470000: uvm_test_top.env.pred [PREDICTOR] a: 1000, b: 0001, c: 1
-# UVM_INFO monitor.svh(34) @ 1510000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1510000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1000
-# b: 0001
-# carry_in: 1
-# sum: 1010
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1010
-# carry_out: 0
-# 
-# UVM_INFO @ 1510000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1510000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1510000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 1100, c: 0
-# UVM_INFO driver.svh(32) @ 1510000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1530000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1100, b: 1100, cin: 0
-# UVM_INFO transaction.svh(34) @ 1530000: reporter@@tx [TRANSACTION] a = 1100, tx.a = 1000, b = 1100, tx.b = 0001, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1530000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1100, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 1530000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11000
-# UVM_INFO predictor.svh(53) @ 1530000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 1100, c: 0
-# UVM_INFO monitor.svh(34) @ 1570000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1570000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1100
-# b: 1100
-# carry_in: 0
-# sum: 1000
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1000
-# carry_out: 1
-# 
-# UVM_INFO @ 1570000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1570000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1570000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0100, c: 1
-# UVM_INFO driver.svh(32) @ 1570000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1590000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 0100, cin: 1
-# UVM_INFO transaction.svh(34) @ 1590000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 1100, b = 0100, tx.b = 1100, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 1590000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 0100, c: 1
-# UVM_INFO predictor.svh(37) @ 1590000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10010
-# UVM_INFO predictor.svh(53) @ 1590000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0100, c: 1
-# UVM_INFO monitor.svh(34) @ 1630000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1630000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1101
-# b: 0100
-# carry_in: 1
-# sum: 0010
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0010
-# carry_out: 1
-# 
-# UVM_INFO @ 1630000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1630000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1630000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1001, c: 1
-# UVM_INFO driver.svh(32) @ 1630000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1650000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 1001, cin: 1
-# UVM_INFO transaction.svh(34) @ 1650000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 1101, b = 1001, tx.b = 0100, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1650000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 1001, c: 1
-# UVM_INFO predictor.svh(37) @ 1650000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1650000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1001, c: 1
-# UVM_INFO monitor.svh(34) @ 1690000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1690000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1011
-# b: 1001
-# carry_in: 1
-# sum: 0101
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0101
-# carry_out: 1
-# 
-# UVM_INFO @ 1690000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1690000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1690000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 1000, c: 1
-# UVM_INFO driver.svh(32) @ 1690000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1710000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 1000, cin: 1
-# UVM_INFO transaction.svh(34) @ 1710000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 1011, b = 1000, tx.b = 1001, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1710000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 1000, c: 1
-# UVM_INFO predictor.svh(37) @ 1710000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 1710000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 1000, c: 1
-# UVM_INFO monitor.svh(34) @ 1750000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1750000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1010
-# b: 1000
-# carry_in: 1
-# sum: 0011
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0011
-# carry_out: 1
-# 
-# UVM_INFO @ 1750000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1750000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1750000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0110, c: 1
-# UVM_INFO driver.svh(32) @ 1750000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1770000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 0110, cin: 1
-# UVM_INFO transaction.svh(34) @ 1770000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 1010, b = 0110, tx.b = 1000, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1770000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 0110, c: 1
-# UVM_INFO predictor.svh(37) @ 1770000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 1770000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0110, c: 1
-# UVM_INFO monitor.svh(34) @ 1810000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1810000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0110
-# b: 0110
-# carry_in: 1
-# sum: 1101
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1101
-# carry_out: 0
-# 
-# UVM_INFO @ 1810000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1810000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1810000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1011, b: 1010, c: 0
-# UVM_INFO driver.svh(32) @ 1810000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1830000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1011, b: 1010, cin: 0
-# UVM_INFO transaction.svh(34) @ 1830000: reporter@@tx [TRANSACTION] a = 1011, tx.a = 0110, b = 1010, tx.b = 0110, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 1830000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1011, b: 1010, c: 0
-# UVM_INFO predictor.svh(37) @ 1830000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10101
-# UVM_INFO predictor.svh(53) @ 1830000: uvm_test_top.env.pred [PREDICTOR] a: 1011, b: 1010, c: 0
-# UVM_INFO monitor.svh(34) @ 1870000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1870000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1011
-# b: 1010
-# carry_in: 0
-# sum: 0101
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0101
-# carry_out: 1
-# 
-# UVM_INFO @ 1870000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1870000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1870000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0011, c: 0
-# UVM_INFO driver.svh(32) @ 1870000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1890000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 0011, cin: 0
-# UVM_INFO transaction.svh(34) @ 1890000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 1011, b = 0011, tx.b = 1010, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 1890000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 0011, c: 0
-# UVM_INFO predictor.svh(37) @ 1890000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 1890000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0011, c: 0
-# UVM_INFO monitor.svh(34) @ 1930000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1930000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0110
-# b: 0011
-# carry_in: 0
-# sum: 1001
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1001
-# carry_out: 0
-# 
-# UVM_INFO @ 1930000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1930000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1930000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1100, c: 1
-# UVM_INFO driver.svh(32) @ 1930000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 1950000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1100, cin: 1
-# UVM_INFO transaction.svh(34) @ 1950000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0110, b = 1100, tx.b = 0011, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 1950000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1100, c: 1
-# UVM_INFO predictor.svh(37) @ 1950000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 1950000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1100, c: 1
-# UVM_INFO monitor.svh(34) @ 1990000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 1990000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0001
-# b: 1100
-# carry_in: 1
-# sum: 1110
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1110
-# carry_out: 0
-# 
-# UVM_INFO @ 1990000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 1990000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 1990000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1110, c: 0
-# UVM_INFO driver.svh(32) @ 1990000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2010000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1110, cin: 0
-# UVM_INFO transaction.svh(34) @ 2010000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0001, b = 1110, tx.b = 1100, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2010000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1110, c: 0
-# UVM_INFO predictor.svh(37) @ 2010000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 2010000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1110, c: 0
-# UVM_INFO monitor.svh(34) @ 2050000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2050000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0001
-# b: 1110
-# carry_in: 0
-# sum: 1111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1111
-# carry_out: 0
-# 
-# UVM_INFO @ 2050000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2050000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2050000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 0011, c: 1
-# UVM_INFO driver.svh(32) @ 2050000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2070000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 0011, cin: 1
-# UVM_INFO transaction.svh(34) @ 2070000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0001, b = 0011, tx.b = 1110, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 2070000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 0011, c: 1
-# UVM_INFO predictor.svh(37) @ 2070000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 2070000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 0011, c: 1
-# UVM_INFO monitor.svh(34) @ 2110000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2110000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0101
-# b: 0011
-# carry_in: 1
-# sum: 1001
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1001
-# carry_out: 0
-# 
-# UVM_INFO @ 2110000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2110000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2110000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0100, b: 0001, c: 1
-# UVM_INFO driver.svh(32) @ 2110000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2130000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0100, b: 0001, cin: 1
-# UVM_INFO transaction.svh(34) @ 2130000: reporter@@tx [TRANSACTION] a = 0100, tx.a = 0101, b = 0001, tx.b = 0011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2130000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0100, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 2130000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
-# UVM_INFO predictor.svh(53) @ 2130000: uvm_test_top.env.pred [PREDICTOR] a: 0100, b: 0001, c: 1
-# UVM_INFO monitor.svh(34) @ 2170000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2170000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0100
-# b: 0001
-# carry_in: 1
-# sum: 0110
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0110
-# carry_out: 0
-# 
-# UVM_INFO @ 2170000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2170000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2170000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1011, c: 0
-# UVM_INFO driver.svh(32) @ 2170000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2190000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1011, cin: 0
-# UVM_INFO transaction.svh(34) @ 2190000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0100, b = 1011, tx.b = 0001, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2190000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1011, c: 0
-# UVM_INFO predictor.svh(37) @ 2190000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10000
-# UVM_INFO predictor.svh(53) @ 2190000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1011, c: 0
-# UVM_INFO monitor.svh(34) @ 2230000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2230000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0101
-# b: 1011
-# carry_in: 0
-# sum: 0000
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0000
-# carry_out: 1
-# 
-# UVM_INFO @ 2230000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2230000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2230000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0001, c: 1
-# UVM_INFO driver.svh(32) @ 2230000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2250000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 0001, cin: 1
-# UVM_INFO transaction.svh(34) @ 2250000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0101, b = 0001, tx.b = 1011, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 2250000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 2250000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00100
-# UVM_INFO predictor.svh(53) @ 2250000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0001, c: 1
-# UVM_INFO monitor.svh(34) @ 2290000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2290000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0010
-# b: 0001
-# carry_in: 1
-# sum: 0100
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0100
-# carry_out: 0
-# 
-# UVM_INFO @ 2290000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2290000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2290000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0110, b: 0010, c: 1
-# UVM_INFO driver.svh(32) @ 2290000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2310000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0110, b: 0010, cin: 1
-# UVM_INFO transaction.svh(34) @ 2310000: reporter@@tx [TRANSACTION] a = 0110, tx.a = 0010, b = 0010, tx.b = 0001, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2310000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0110, b: 0010, c: 1
-# UVM_INFO predictor.svh(37) @ 2310000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01001
-# UVM_INFO predictor.svh(53) @ 2310000: uvm_test_top.env.pred [PREDICTOR] a: 0110, b: 0010, c: 1
-# UVM_INFO monitor.svh(34) @ 2350000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2350000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0110
-# b: 0010
-# carry_in: 1
-# sum: 1001
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1001
-# carry_out: 0
-# 
-# UVM_INFO @ 2350000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2350000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2350000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0111, b: 1100, c: 1
-# UVM_INFO driver.svh(32) @ 2350000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2370000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0111, b: 1100, cin: 1
-# UVM_INFO transaction.svh(34) @ 2370000: reporter@@tx [TRANSACTION] a = 0111, tx.a = 0110, b = 1100, tx.b = 0010, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2370000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0111, b: 1100, c: 1
-# UVM_INFO predictor.svh(37) @ 2370000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10100
-# UVM_INFO predictor.svh(53) @ 2370000: uvm_test_top.env.pred [PREDICTOR] a: 0111, b: 1100, c: 1
-# UVM_INFO monitor.svh(34) @ 2410000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2410000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0111
-# b: 1100
-# carry_in: 1
-# sum: 0100
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0100
-# carry_out: 1
-# 
-# UVM_INFO @ 2410000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2410000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2410000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1101, c: 1
-# UVM_INFO driver.svh(32) @ 2410000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2430000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1101, cin: 1
-# UVM_INFO transaction.svh(34) @ 2430000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0111, b = 1101, tx.b = 1100, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2430000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 2430000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 2430000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1101, c: 1
-# UVM_INFO monitor.svh(34) @ 2470000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2470000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0101
-# b: 1101
-# carry_in: 1
-# sum: 0011
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0011
-# carry_out: 1
-# 
-# UVM_INFO @ 2470000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2470000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2470000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 1100, c: 0
-# UVM_INFO driver.svh(32) @ 2470000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2490000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 1100, cin: 0
-# UVM_INFO transaction.svh(34) @ 2490000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 0101, b = 1100, tx.b = 1101, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2490000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 2490000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11001
-# UVM_INFO predictor.svh(53) @ 2490000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 1100, c: 0
-# UVM_INFO monitor.svh(34) @ 2530000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2530000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1101
-# b: 1100
-# carry_in: 0
-# sum: 1001
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1001
-# carry_out: 1
-# 
-# UVM_INFO @ 2530000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2530000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2530000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0101, c: 0
-# UVM_INFO driver.svh(32) @ 2530000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2550000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0101, cin: 0
-# UVM_INFO transaction.svh(34) @ 2550000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 1101, b = 0101, tx.b = 1100, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 2550000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0101, c: 0
-# UVM_INFO predictor.svh(37) @ 2550000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 2550000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0101, c: 0
-# UVM_INFO monitor.svh(34) @ 2590000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2590000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1010
-# b: 0101
-# carry_in: 0
-# sum: 1111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1111
-# carry_out: 0
-# 
-# UVM_INFO @ 2590000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2590000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2590000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0011, c: 0
-# UVM_INFO driver.svh(32) @ 2590000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2610000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0011, cin: 0
-# UVM_INFO transaction.svh(34) @ 2610000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 1010, b = 0011, tx.b = 0101, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 2610000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0011, c: 0
-# UVM_INFO predictor.svh(37) @ 2610000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 2610000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0011, c: 0
-# UVM_INFO monitor.svh(34) @ 2650000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2650000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1010
-# b: 0011
-# carry_in: 0
-# sum: 1101
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1101
-# carry_out: 0
-# 
-# UVM_INFO @ 2650000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2650000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2650000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0001, c: 0
-# UVM_INFO driver.svh(32) @ 2650000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2670000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 0001, cin: 0
-# UVM_INFO transaction.svh(34) @ 2670000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 1010, b = 0001, tx.b = 0011, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 2670000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 0001, c: 0
-# UVM_INFO predictor.svh(37) @ 2670000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 2670000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0001, c: 0
-# UVM_INFO monitor.svh(34) @ 2710000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2710000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1101
-# b: 0001
-# carry_in: 0
-# sum: 1110
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1110
-# carry_out: 0
-# 
-# UVM_INFO @ 2710000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2710000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2710000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0000, b: 0011, c: 1
-# UVM_INFO driver.svh(32) @ 2710000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2730000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0000, b: 0011, cin: 1
-# UVM_INFO transaction.svh(34) @ 2730000: reporter@@tx [TRANSACTION] a = 0000, tx.a = 1101, b = 0011, tx.b = 0001, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 2730000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0000, b: 0011, c: 1
-# UVM_INFO predictor.svh(37) @ 2730000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00100
-# UVM_INFO predictor.svh(53) @ 2730000: uvm_test_top.env.pred [PREDICTOR] a: 0000, b: 0011, c: 1
-# UVM_INFO monitor.svh(34) @ 2770000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2770000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0000
-# b: 0011
-# carry_in: 1
-# sum: 0100
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0100
-# carry_out: 0
-# 
-# UVM_INFO @ 2770000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2770000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2770000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0001, b: 1011, c: 1
-# UVM_INFO driver.svh(32) @ 2770000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2790000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0001, b: 1011, cin: 1
-# UVM_INFO transaction.svh(34) @ 2790000: reporter@@tx [TRANSACTION] a = 0001, tx.a = 0000, b = 1011, tx.b = 0011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2790000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0001, b: 1011, c: 1
-# UVM_INFO predictor.svh(37) @ 2790000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01101
-# UVM_INFO predictor.svh(53) @ 2790000: uvm_test_top.env.pred [PREDICTOR] a: 0001, b: 1011, c: 1
-# UVM_INFO monitor.svh(34) @ 2830000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2830000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0001
-# b: 1011
-# carry_in: 1
-# sum: 1101
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1101
-# carry_out: 0
-# 
-# UVM_INFO @ 2830000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2830000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2830000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1000, c: 1
-# UVM_INFO driver.svh(32) @ 2830000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2850000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1000, cin: 1
-# UVM_INFO transaction.svh(34) @ 2850000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0001, b = 1000, tx.b = 1011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2850000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1000, c: 1
-# UVM_INFO predictor.svh(37) @ 2850000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01110
-# UVM_INFO predictor.svh(53) @ 2850000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1000, c: 1
-# UVM_INFO monitor.svh(34) @ 2890000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2890000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0101
-# b: 1000
-# carry_in: 1
-# sum: 1110
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1110
-# carry_out: 0
-# 
-# UVM_INFO @ 2890000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2890000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2890000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1110, b: 1110, c: 0
-# UVM_INFO driver.svh(32) @ 2890000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2910000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1110, b: 1110, cin: 0
-# UVM_INFO transaction.svh(34) @ 2910000: reporter@@tx [TRANSACTION] a = 1110, tx.a = 0101, b = 1110, tx.b = 1000, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 2910000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1110, b: 1110, c: 0
-# UVM_INFO predictor.svh(37) @ 2910000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11100
-# UVM_INFO predictor.svh(53) @ 2910000: uvm_test_top.env.pred [PREDICTOR] a: 1110, b: 1110, c: 0
-# UVM_INFO monitor.svh(34) @ 2950000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 2950000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1110
-# b: 1110
-# carry_in: 0
-# sum: 1100
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1100
-# carry_out: 1
-# 
-# UVM_INFO @ 2950000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 2950000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 2950000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0100, c: 0
-# UVM_INFO driver.svh(32) @ 2950000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 2970000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 0100, cin: 0
-# UVM_INFO transaction.svh(34) @ 2970000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1110, b = 0100, tx.b = 1110, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 2970000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 0100, c: 0
-# UVM_INFO predictor.svh(37) @ 2970000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00111
-# UVM_INFO predictor.svh(53) @ 2970000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0100, c: 0
-# UVM_INFO monitor.svh(34) @ 3010000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3010000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0011
-# b: 0100
-# carry_in: 0
-# sum: 0111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0111
-# carry_out: 0
-# 
-# UVM_INFO @ 3010000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3010000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3010000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0010, c: 0
-# UVM_INFO driver.svh(32) @ 3010000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3030000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0010, cin: 0
-# UVM_INFO transaction.svh(34) @ 3030000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 0011, b = 0010, tx.b = 0100, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 3030000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0010, c: 0
-# UVM_INFO predictor.svh(37) @ 3030000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01100
-# UVM_INFO predictor.svh(53) @ 3030000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0010, c: 0
-# UVM_INFO monitor.svh(34) @ 3070000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3070000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1010
-# b: 0010
-# carry_in: 0
-# sum: 1100
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1100
-# carry_out: 0
-# 
-# UVM_INFO @ 3070000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3070000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3070000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1100, b: 1100, c: 0
-# UVM_INFO driver.svh(32) @ 3070000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3090000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1100, b: 1100, cin: 0
-# UVM_INFO transaction.svh(34) @ 3090000: reporter@@tx [TRANSACTION] a = 1100, tx.a = 1010, b = 1100, tx.b = 0010, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 3090000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1100, b: 1100, c: 0
-# UVM_INFO predictor.svh(37) @ 3090000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 11000
-# UVM_INFO predictor.svh(53) @ 3090000: uvm_test_top.env.pred [PREDICTOR] a: 1100, b: 1100, c: 0
-# UVM_INFO monitor.svh(34) @ 3130000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3130000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1100
-# b: 1100
-# carry_in: 0
-# sum: 1000
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1000
-# carry_out: 1
-# 
-# UVM_INFO @ 3130000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3130000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1001, b: 1101, c: 0
-# UVM_INFO driver.svh(32) @ 3130000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3150000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1001, b: 1101, cin: 0
-# UVM_INFO transaction.svh(34) @ 3150000: reporter@@tx [TRANSACTION] a = 1001, tx.a = 1100, b = 1101, tx.b = 1100, carry_in = 0, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 3150000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1001, b: 1101, c: 0
-# UVM_INFO predictor.svh(37) @ 3150000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10110
-# UVM_INFO predictor.svh(53) @ 3150000: uvm_test_top.env.pred [PREDICTOR] a: 1001, b: 1101, c: 0
-# UVM_INFO monitor.svh(34) @ 3190000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3190000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1001
-# b: 1101
-# carry_in: 0
-# sum: 0110
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0110
-# carry_out: 1
-# 
-# UVM_INFO @ 3190000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3190000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0001, c: 1
-# UVM_INFO driver.svh(32) @ 3190000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3210000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 0001, cin: 1
-# UVM_INFO transaction.svh(34) @ 3210000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1001, b = 0001, tx.b = 1101, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 3210000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 3210000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00101
-# UVM_INFO predictor.svh(53) @ 3210000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0001, c: 1
-# UVM_INFO monitor.svh(34) @ 3250000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3250000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0011
-# b: 0001
-# carry_in: 1
-# sum: 0101
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0101
-# carry_out: 0
-# 
-# UVM_INFO @ 3250000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3250000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1101, b: 0010, c: 0
-# UVM_INFO driver.svh(32) @ 3250000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3270000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1101, b: 0010, cin: 0
-# UVM_INFO transaction.svh(34) @ 3270000: reporter@@tx [TRANSACTION] a = 1101, tx.a = 0011, b = 0010, tx.b = 0001, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 3270000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1101, b: 0010, c: 0
-# UVM_INFO predictor.svh(37) @ 3270000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01111
-# UVM_INFO predictor.svh(53) @ 3270000: uvm_test_top.env.pred [PREDICTOR] a: 1101, b: 0010, c: 0
-# UVM_INFO monitor.svh(34) @ 3310000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3310000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1101
-# b: 0010
-# carry_in: 0
-# sum: 1111
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1111
-# carry_out: 0
-# 
-# UVM_INFO @ 3310000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3310000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0011, b: 0001, c: 1
-# UVM_INFO driver.svh(32) @ 3310000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3330000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0011, b: 0001, cin: 1
-# UVM_INFO transaction.svh(34) @ 3330000: reporter@@tx [TRANSACTION] a = 0011, tx.a = 1101, b = 0001, tx.b = 0010, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 3330000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0011, b: 0001, c: 1
-# UVM_INFO predictor.svh(37) @ 3330000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00101
-# UVM_INFO predictor.svh(53) @ 3330000: uvm_test_top.env.pred [PREDICTOR] a: 0011, b: 0001, c: 1
-# UVM_INFO monitor.svh(34) @ 3370000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3370000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0011
-# b: 0001
-# carry_in: 1
-# sum: 0101
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0101
-# carry_out: 0
-# 
-# UVM_INFO @ 3370000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3370000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 1101, c: 1
-# UVM_INFO driver.svh(32) @ 3370000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3390000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 1101, cin: 1
-# UVM_INFO transaction.svh(34) @ 3390000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0011, b = 1101, tx.b = 0001, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 3390000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 1101, c: 1
-# UVM_INFO predictor.svh(37) @ 3390000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 10011
-# UVM_INFO predictor.svh(53) @ 3390000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 1101, c: 1
-# UVM_INFO monitor.svh(34) @ 3430000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3430000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0101
-# b: 1101
-# carry_in: 1
-# sum: 0011
-# carry_out: 1
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0011
-# carry_out: 1
-# 
-# UVM_INFO @ 3430000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3430000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0101, b: 0000, c: 1
-# UVM_INFO driver.svh(32) @ 3430000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3450000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0101, b: 0000, cin: 1
-# UVM_INFO transaction.svh(34) @ 3450000: reporter@@tx [TRANSACTION] a = 0101, tx.a = 0101, b = 0000, tx.b = 1101, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 3450000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0101, b: 0000, c: 1
-# UVM_INFO predictor.svh(37) @ 3450000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
-# UVM_INFO predictor.svh(53) @ 3450000: uvm_test_top.env.pred [PREDICTOR] a: 0101, b: 0000, c: 1
-# UVM_INFO monitor.svh(34) @ 3490000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3490000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0101
-# b: 0000
-# carry_in: 1
-# sum: 0110
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0110
-# carry_out: 0
-# 
-# UVM_INFO @ 3490000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3490000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 1010, b: 0001, c: 0
-# UVM_INFO driver.svh(32) @ 3490000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3510000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 1010, b: 0001, cin: 0
-# UVM_INFO transaction.svh(34) @ 3510000: reporter@@tx [TRANSACTION] a = 1010, tx.a = 0101, b = 0001, tx.b = 0000, carry_in = 0, tx.carry_in = 1
-# UVM_INFO monitor.svh(45) @ 3510000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 1010, b: 0001, c: 0
-# UVM_INFO predictor.svh(37) @ 3510000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 01011
-# UVM_INFO predictor.svh(53) @ 3510000: uvm_test_top.env.pred [PREDICTOR] a: 1010, b: 0001, c: 0
-# UVM_INFO monitor.svh(34) @ 3550000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3550000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 1010
-# b: 0001
-# carry_in: 0
-# sum: 1011
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 1011
-# carry_out: 0
-# 
-# UVM_INFO @ 3550000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO sequence.svh(23) @ 3550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Send transaction to driver
-# UVM_INFO sequence.svh(24) @ 3550000: uvm_test_top.env.agt.sqr@@seq [SEQUENCE] Sent: a: 0010, b: 0011, c: 1
-# UVM_INFO driver.svh(32) @ 3550000: uvm_test_top.env.agt.drv [DRIVER] transaction received by driver
-# UVM_INFO driver.svh(37) @ 3570000: uvm_test_top.env.agt.drv [DRIVER] Driver: a: 0010, b: 0011, cin: 1
-# UVM_INFO transaction.svh(34) @ 3570000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 1010, b = 0011, tx.b = 0001, carry_in = 1, tx.carry_in = 0
-# UVM_INFO monitor.svh(45) @ 3570000: uvm_test_top.env.agt.mon [MONITOR] New Transaction a: 0010, b: 0011, c: 1
-# UVM_INFO predictor.svh(37) @ 3570000: uvm_test_top.env.pred [PREDICTOR] 5 bit sum: 00110
-# UVM_INFO predictor.svh(53) @ 3570000: uvm_test_top.env.pred [PREDICTOR] a: 0010, b: 0011, c: 1
-# UVM_INFO monitor.svh(34) @ 3610000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO @ 3610000: uvm_test_top.env.comp [Comparator] 
-# expected:
-# a: 0010
-# b: 0011
-# carry_in: 1
-# sum: 0110
-# carry_out: 0
-# ~~~~~~~~~~~~~~~~~~
-# actual:
-# sum: 0110
-# carry_out: 0
-# 
-# UVM_INFO @ 3610000: uvm_test_top.env.comp [Comparator] Data Match
-# UVM_INFO transaction.svh(34) @ 3630000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0010, b = 0011, tx.b = 0011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(34) @ 3630000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO transaction.svh(34) @ 3650000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0010, b = 0011, tx.b = 0011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(34) @ 3650000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO transaction.svh(34) @ 3670000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0010, b = 0011, tx.b = 0011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(34) @ 3670000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO transaction.svh(34) @ 3690000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0010, b = 0011, tx.b = 0011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(34) @ 3690000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO transaction.svh(34) @ 3710000: reporter@@tx [TRANSACTION] a = 0010, tx.a = 0010, b = 0011, tx.b = 0011, carry_in = 1, tx.carry_in = 1
-# UVM_INFO monitor.svh(34) @ 3710000: uvm_test_top.env.agt.mon [MONITOR] vif.check = 1
-# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1271) @ 3710000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO @ 3710000: uvm_test_top.env.comp [Comparator] Matches:    60
-# UVM_INFO @ 3710000: uvm_test_top.env.comp [Comparator] Mismatches: 0
-# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 3710000: reporter [UVM/REPORT/SERVER] 
-# --- UVM Report Summary ---
-# 
-# ** Report counts by severity
-# UVM_INFO :  680
-# UVM_WARNING :    0
-# UVM_ERROR :    0
-# UVM_FATAL :    0
-# ** Report counts by id
-# [Comparator]   122
-# [DRIVER]   120
-# [MONITOR]   127
-# [PREDICTOR]   120
-# [Questa UVM]     2
-# [RNTST]     1
-# [SEQUENCE]   120
-# [TEST_DONE]     1
-# [TRANSACTION]    66
-# [UVM/RELNOTES]     1
-# 
-# ** Note: $finish    : /package/eda/mg/questa10.6b/questasim/linux_x86_64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
-#    Time: 3710 ns  Iteration: 68  Instance: /tb_adder
-# 1
-# Break in Task uvm_pkg/uvm_root::run_test at /package/eda/mg/questa10.6b/questasim/linux_x86_64/../verilog_src/uvm-1.2/src/base/uvm_root.svh line 517
-# End time: 21:50:39 on Mar 23,2022, Elapsed time: 0:06:51
-# Errors: 0, Warnings: 0
+# End time: 20:47:35 on Mar 26,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

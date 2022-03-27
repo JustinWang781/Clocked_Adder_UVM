@@ -48,7 +48,6 @@ class monitor extends uvm_monitor;
         while(!vif.check) begin
           @(posedge vif.clk);
         end
-        //wait(vif.check);
         // capture the responses from DUT and send it to scoreboard through result_ap
         tx.result_sum = vif.sum;
         tx.result_overflow = vif.overflow;

@@ -13,7 +13,6 @@ class adder_sequence extends uvm_sequence #(transaction);
     transaction req_item;
     req_item = transaction#(4)::type_id::create("req_item");
     
-    // repeat twenty randomized test cases
     repeat(60) begin
       start_item(req_item);
       if(!req_item.randomize()) begin

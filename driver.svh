@@ -52,8 +52,4 @@ class driver extends uvm_driver#(transaction);
     @(posedge vif.clk);
     vif.n_rst = 1;
   endtask
-    
-
-
-
 endclass: driver
