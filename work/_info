@@ -1,0 +1,153 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/asicfab/a/socet67/adder_uvm
+vadder_1bit
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 9RV[5Xjo[C6l3SmddB3D`2
+IoJ?IOGYT<YY=5>Q3b9A_70
+Z2 !s105 tb_adder_sv_unit
+S1
+Z3 d/home/asicfab/a/socet67/adder_uvm_clocked/adder_uvm
+w1648014509
+Z4 8adder_Nbit.sv
+Z5 Fadder_Nbit.sv
+L0 1
+Z6 OL;L;10.6b;65
+!s108 1648083856.000000
+Z7 !s107 predictor.svh|comparator.svh|monitor.svh|driver.svh|transaction.svh|sequence.svh|agent.svh|environment.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_deprecated_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_reg_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_callback_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_sequence_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/tlm1/uvm_tlm_imps.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_tlm_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_printer_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_object_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_phase_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_message_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_global_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_version_defines.svh|/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/uvm_macros.svh|test.svh|adder_if.svh|adder_Nbit.sv|tb_adder.sv|
+Z8 !s90 -L|/package/eda/mg/questa10.6b/questasim/uvm-1.2|tb_adder.sv|
+!i113 0
+Z9 o-L /package/eda/mg/questa10.6b/questasim/uvm-1.2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 tCvgOpt 0
+Yadder_if
+R0
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 =?ngGUY<aiHD_ajhAW_nm0
+I;8;US_iNSlf^g3<eBh^eD1
+R2
+S1
+R3
+w1648014506
+8adder_if.svh
+Z11 Fadder_if.svh
+L0 4
+R6
+Z12 !s108 1648086207.000000
+R7
+R8
+!i113 0
+R9
+R10
+vadder_nbit
+R0
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 9E;Ya@i4FYLa:e^V8hTZN1
+Ig0dH[aVf`DQ7W18E28V<B3
+R2
+S1
+R3
+w1648084987
+R4
+R5
+L0 39
+R6
+R12
+R7
+R8
+!i113 0
+R9
+R10
+vtb_adder
+R0
+Z13 DXx45 /package/eda/mg/questa10.6b/questasim/uvm-1.2 7 uvm_pkg 0 22 <R5I]K9WECE;2=F<>n3Ah1
+DXx4 work 16 tb_adder_sv_unit 0 22 bT]z@8AXGcoZOLHUgM:hX0
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 z`LQFai<90e`_RbB?Nf4E3
+I2ZD<H0IRZcFfz<Z8<:EJk2
+R2
+S1
+R3
+w1648014508
+Z14 8tb_adder.sv
+Z15 Ftb_adder.sv
+L0 13
+R6
+R12
+R7
+R8
+!i113 0
+R9
+R10
+Xtb_adder_sv_unit
+!s115 adder_if
+R0
+R13
+VbT]z@8AXGcoZOLHUgM:hX0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Id^SHjD3gXKD3LZSCaKAM2
+IbT]z@8AXGcoZOLHUgM:hX0
+!i103 1
+S1
+R3
+w1648086191
+R14
+R15
+R5
+R11
+Ftest.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/uvm_macros.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_version_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_global_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_message_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_phase_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_object_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_printer_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_tlm_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/tlm1/uvm_tlm_imps.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_sequence_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_callback_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_reg_defines.svh
+F/package/eda/mg/questa10.6b/questasim/uvm-1.2/../verilog_src/uvm-1.2/src/macros/uvm_deprecated_defines.svh
+Fenvironment.svh
+Fagent.svh
+Fsequence.svh
+Ftransaction.svh
+Fdriver.svh
+Fmonitor.svh
+Fcomparator.svh
+Fpredictor.svh
+L0 1
+R6
+R12
+R7
+R8
+!i113 0
+R9
+R10

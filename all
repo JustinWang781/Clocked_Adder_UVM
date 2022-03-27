@@ -1,0 +1,44 @@
+`ifndef TRANSACTION_SVH
+`define TRANSACTION_SVH
+
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+class transaction #(parameter BIT_WIDTH = 4) extends uvm_sequence_item;
+  rand bit [BIT_WIDTH - 1:0] a;
+  rand bit [BIT_WIDTH - 1:0] b;
+  rand bit carry_in;
+
+  bit [BIT_WIDTH - 1:0] result_sum;
+  bit result_carry_out;
+
+  `uvm_object_utils_begin(transaction)
+    `uvm_field_int(a, UVM_NOCOMPARE)
+    `uvm_field_int(b, UVM_NOCOMPARE)
+    `uvm_field_int(carry_in, UVM_NOCOMPARE)
+    `uvm_field_int(result_sum, UVM_DEFAULT)
+    `uvm_field_int(result_carry_out, UVM_DEFAULT)
+  `uvm_object_utils_end
+
+  //constraint rollover {rollover_value != 0; rollover_value != 1;}
+  //constraint clk_number{num_clk > 0; num_clk < 20;}
+
+  function new(string name = "transaction");
+    super.new(name);
+  endfunction: new
+
+  // comparison between two transaction object
+  // if two transactions are the same, return 1 else return 
+  function int input_equal(transaction tx);
+    int result;
+    if((a == tx.a) && (b == tx.b) && (carry_in = tx.carry_in) begin
+      result = 1;
+      return result;
+    end
+    result = 0;
+    return result;
+  endfunction
+
+endclass //transaction
+
+`endif
